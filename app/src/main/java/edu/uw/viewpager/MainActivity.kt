@@ -16,10 +16,9 @@ class MainActivity : AppCompatActivity(), MovieListFragment.OnMovieSelectedListe
 
     //respond to search button clicking
     fun handleSearchClick(v: View) {
-        val text = findViewById<View>(R.id.txt_search) as EditText
-        val searchTerm = text.text.toString()
+        val search = SearchFragment.newInstance()
 
-        val fragment = MovieListFragment.newInstance(searchTerm)
+        val fragment = MovieListFragment.newInstance()
 
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.container, fragment, MOVIE_LIST_FRAGMENT_TAG)
