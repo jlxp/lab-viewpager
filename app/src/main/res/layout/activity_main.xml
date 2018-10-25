@@ -9,29 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/input_layout"
+    <FrameLayout
+        android:id="@+id/seart_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <Button
-            android:id="@+id/btn_search"
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <fragment
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Search"
-            android:drawableLeft="@android:drawable/ic_menu_search"
-            android:onClick="handleSearchClick"
-            />
+            android:name="edu.uw.viewpager.SearchFragment"/>
+    </FrameLayout>
 
-        <EditText
-            android:id="@+id/txt_search"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/search_hint"
-            android:layout_weight="1"
-            />
-    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/container"
@@ -41,7 +28,7 @@
 
         <!--<fragment-->
             <!--android:id="@+id/fragment"-->
-            <!--android:name="edu.uw.fragmentdemo.MovieListFragment"-->
+            <!--android:name="edu.uw.viewpager.MovieListFragment"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="match_parent"/>-->
 

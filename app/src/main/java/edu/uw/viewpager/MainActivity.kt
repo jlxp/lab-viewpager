@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.EditText
+import edu.uw.viewpager.SearchFragment
 
 class MainActivity : AppCompatActivity(), MovieListFragment.OnMovieSelectedListener {
 
